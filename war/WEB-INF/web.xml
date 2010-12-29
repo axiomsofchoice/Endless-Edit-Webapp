@@ -10,10 +10,18 @@
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>com.np_compete.endless_edit.server.GreetingServiceImpl</servlet-class>
   </servlet>
-  
+  <servlet>
+    <servlet-name>stockPriceServiceImpl</servlet-name>
+    <servlet-class>com.google.gwt.sample.stockwatcher.server.StockPriceServiceImpl</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
     <url-pattern>/endlessedit/greet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>stockPriceServiceImpl</servlet-name>
+    <url-pattern>/endlessedit/stockPrices</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->

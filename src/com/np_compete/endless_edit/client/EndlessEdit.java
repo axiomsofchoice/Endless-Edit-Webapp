@@ -2,23 +2,23 @@ package com.np_compete.endless_edit.client;
 
 import java.util.ArrayList;
 import java.util.Date;
-
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.i18n.client.NumberFormat;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.FlexTable;
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.google.gwt.user.client.Random;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -32,7 +32,8 @@ public class EndlessEdit implements EntryPoint {
 	private Button addStockButton = new Button("Add");
 	private Label lastUpdatedLabel = new Label();
 	private ArrayList<String> stocks = new ArrayList<String>();
-
+	private StockPriceServiceAsync stockPriceSvc = GWT.create(StockPriceService.class);
+	  
 	private static final int REFRESH_INTERVAL = 5000; // ms
 
 	/**
@@ -105,25 +106,45 @@ public class EndlessEdit implements EntryPoint {
 	      }
 	    });
 
+	    
+	    // Create a Label and an HTML widget.
+	    Label lbl = new Label("This is just text.  It will not be interpreted "
+	      + "as .");
+
+	    HTML html = new HTML(
+	      "This is HTML.  It will be interpreted as such if you specify "
+	        + "the asHTML flag.", true);
+
+	    // Add them to the root panel.
+	    VerticalPanel panel = new VerticalPanel();
+	    panel.add(lbl);
+	    panel.add(html);
+	    RootPanel.get("articleText").add(panel);
+
 	  }
 
   /**
    * Generate random stock prices.
    */
 	private void refreshWatchList() {
-	    final double MAX_PRICE = 100.0; // $100.00
-	    final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
-
-	    StockPrices[] prices = new StockPrices[stocks.size()];
-	    for (int i = 0; i < stocks.size(); i++) {
-	      double price = Random.nextDouble() * MAX_PRICE;
-	      double change = price * MAX_PRICE_CHANGE
-	          * (Random.nextDouble() * 2.0 - 1.0);
-
-	      prices[i] = new StockPrices(stocks.get(i), price, change);
+	    // Initialize the service proxy.
+	    if (stockPriceSvc == null) {
+	      stockPriceSvc = GWT.create(StockPriceService.class);
 	    }
 
-	    updateTable(prices);
+	    // Set up the callback object.
+	    AsyncCallback<StockPrices[]> callback = new AsyncCallback<StockPrices[]>() {
+	      public void onFailure(Throwable caught) {
+	        // TODO: Do something with errors.
+	      }
+
+	      public void onSuccess(StockPrices[] result) {
+	        updateTable(result);
+	      }
+	    };
+
+	    // Make the call to the stock price service.
+	    stockPriceSvc.getPrices(stocks.toArray(new String[0]), callback);
 	}
 
 	 /**
