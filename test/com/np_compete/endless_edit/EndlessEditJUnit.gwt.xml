@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='com.np_compete.endless_edit.webapp.EndlessEdit'/>
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/endlessedit/greet" class="com.np_compete.endless_edit.webapp.server.GreetingServiceImpl" />
+
+</module>

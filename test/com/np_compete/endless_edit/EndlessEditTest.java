@@ -1,13 +1,12 @@
 package com.np_compete.endless_edit;
 
 import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import org.junit.Before;
-import org.junit.Test;
 
 /**
  * Basic unit tests for Endless Edit.
