@@ -3,11 +3,13 @@
  */
 package com.np_compete.endless_edit.client;
 
+import java.io.Serializable;
+
 /**
  * @author axiomsofchoice
  *
  */
-public class StockPrices {
+public class StockPrices implements Serializable {
 
 	  private String symbol;
 	  private double price;

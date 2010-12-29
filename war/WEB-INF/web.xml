@@ -12,7 +12,7 @@
   </servlet>
   <servlet>
     <servlet-name>stockPriceServiceImpl</servlet-name>
-    <servlet-class>com.google.gwt.sample.stockwatcher.server.StockPriceServiceImpl</servlet-class>
+    <servlet-class>com.np_compete.endless_edit.server.StockPriceServiceImpl</servlet-class>
   </servlet>
 
   <servlet-mapping>

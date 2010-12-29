@@ -4,13 +4,15 @@
 package com.np_compete.endless_edit.server;
 
 import java.util.Random;
+
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.np_compete.endless_edit.client.StockPriceService ;
 import com.np_compete.endless_edit.client.StockPrices;
 /**
  * @author axiomsofchoice
  *
  */
-public class StockPriceServiceImpl implements StockPriceService {
+public class StockPriceServiceImpl extends RemoteServiceServlet implements StockPriceService {
 
  	  private static final double MAX_PRICE = 100.0; // $100.00
 	  private static final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
