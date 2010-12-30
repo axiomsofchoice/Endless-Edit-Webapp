@@ -17,7 +17,7 @@
     <script type="text/javascript" language="javascript" src="endlessedit/endlessedit.nocache.js"></script>
 	</head>
   <body>
-
+<object data="banner.svg" type="image/svg+xml"></object>
 <%
     UserService userService = UserServiceFactory.getUserService();
     User user = userService.getCurrentUser();

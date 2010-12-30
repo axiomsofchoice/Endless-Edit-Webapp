@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="468"
+   height="60"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="banner.svg">
+  <title
+     id="title2816">Endless Edit Homepage Banner</title>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3611">
+      <stop
+         style="stop-color:#2d91db;stop-opacity:1;"
+         offset="0"
+         id="stop3613" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3615" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3609"
+       is_visible="true" />
+    <linearGradient
+       id="linearGradient3595">
+      <stop
+         style="stop-color:#514499;stop-opacity:1;"
+         offset="0"
+         id="stop3597" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3599" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2820"
+       is_visible="true" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3595"
+       id="linearGradient3601"
+       x1="0.51298702"
+       y1="1005.5261"
+       x2="469.0065"
+       y2="1005.5261"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       gradientTransform="matrix(0.85072303,0.11186776,-0.74643708,0.12749698,804.91069,868.9348)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3611"
+       id="linearGradient3619"
+       x1="-0.5"
+       y1="30.370131"
+       x2="466.98053"
+       y2="30.370131"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.025974,992.86867)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.974359"
+     inkscape:cx="234"
+     inkscape:cy="30.438209"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="544"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Endless Edit Homepage Banner</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-992.36218)">
+    <path
+       style="fill:url(#linearGradient3619);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2.025974,993.60893 47.61039,58.24677 c 28.729392,-17.2218 59.600596,-30.8665 91.675316,-40.5195 108.41425,-32.62758 230.37064,-17.14704 327.19481,41.5325 L 2.025974,993.60893"
+       id="path3607"
+       inkscape:path-effect="#path-effect3609"
+       inkscape:original-d="m 2.025974,993.60893 47.61039,58.24677 c 0,0 58.076266,-34.6005 91.675316,-40.5195 121.80074,-21.45704 336.04284,91.6713 327.19481,41.5325 L 2.025974,993.60893 z"
+       sodipodi:nodetypes="ccscc" />
+    <text
+       xml:space="preserve"
+       style="font-size:53.56560898px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy"
+       x="78.773048"
+       y="987.0412"
+       id="text3621"
+       transform="scale(0.94618241,1.0568787)"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3623"
+         x="78.773048"
+         y="987.0412">Endless Edit</tspan></text>
+  </g>
+</svg>
